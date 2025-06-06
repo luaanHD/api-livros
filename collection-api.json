@@ -1,0 +1,840 @@
+{
+  "info": {
+    "name": "Laravel API - Livros, Autores, Reviews (URL fixa)",
+    "_postman_id": "dc018434-4f5f-4af3-8266-dfc689a5fea6",
+    "description": "Cole\u00e7\u00e3o de testes para a API Laravel com endere\u00e7o fixo http://localhost:8000/api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Livros",
+      "item": [
+        {
+          "name": "GET /livros/listar",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/livros/listar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "livros",
+                "listar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /livros/criar",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/livros/criar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "livros",
+                "criar"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Livro Exemplo\",\n  \"autor_id\": 1,\n  \"genero_id\": 1,\n  \"ano_publicacao\": 2023\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /livros/detalhes/1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/livros/detalhes/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "livros",
+                "detalhes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT /livros/atualizar/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/livros/atualizar/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "livros",
+                "atualizar",
+                "1"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Livro Atualizado\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE /livros/remover/1",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/livros/remover/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "livros",
+                "remover",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Autores",
+      "item": [
+        {
+          "name": "GET /autores/listar",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/autores/listar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "autores",
+                "listar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /autores/criar",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/autores/criar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "autores",
+                "criar"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Autor Exemplo\",\n  \"data_nascimento\": \"1980-01-01\",\n  \"biografia\": \"Bio\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /autores/detalhes/1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/autores/detalhes/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "autores",
+                "detalhes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT /autores/atualizar/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/autores/atualizar/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "autores",
+                "atualizar",
+                "1"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Nome Atualizado\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE /autores/remover/1",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/autores/remover/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "autores",
+                "remover",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "G\u00eaneros",
+      "item": [
+        {
+          "name": "GET /generos/listar",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/generos/listar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "generos",
+                "listar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /generos/criar",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/generos/criar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "generos",
+                "criar"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Fic\\u00e7\\u00e3o\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /generos/detalhes/1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/generos/detalhes/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "generos",
+                "detalhes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT /generos/atualizar/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/generos/atualizar/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "generos",
+                "atualizar",
+                "1"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Atualizado\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE /generos/remover/1",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/generos/remover/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "generos",
+                "remover",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "item": [
+        {
+          "name": "GET /reviews/listar",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/reviews/listar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "listar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /reviews/criar",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/reviews/criar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "criar"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"livro_id\": 1,\n  \"usuario_id\": 1,\n  \"nota\": 5,\n  \"comentario\": \"Excelente!\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /reviews/detalhes/1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/reviews/detalhes/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "detalhes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT /reviews/atualizar/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/reviews/atualizar/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "atualizar",
+                "1"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nota\": 4,\n  \"comentario\": \"Muito bom!\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE /reviews/remover/1",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/reviews/remover/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "remover",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Usu\u00e1rios",
+      "item": [
+        {
+          "name": "GET /usuarios/listar",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/usuarios/listar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "usuarios",
+                "listar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /usuarios/criar",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/usuarios/criar",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "usuarios",
+                "criar"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Usu\\u00e1rio Teste\",\n  \"email\": \"teste@email.com\",\n  \"senha\": \"123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /usuarios/detalhes/1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/usuarios/detalhes/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "usuarios",
+                "detalhes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT /usuarios/atualizar/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/usuarios/atualizar/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "usuarios",
+                "atualizar",
+                "1"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Usu\\u00e1rio Atualizado\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE /usuarios/remover/1",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/usuarios/remover/1",
+              "host": [
+                "http://localhost:8000"
+              ],
+              "path": [
+                "api",
+                "usuarios",
+                "remover",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
